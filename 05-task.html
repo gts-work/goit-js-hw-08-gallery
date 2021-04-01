@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <h3 class="home-page-link"><a href="./index.html">Home</a></h3>
+    <title>Задание 5</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Задание 5</h1>
+
+    <div class="description">
+      Напиши скрипт который, при наборе текста в инпуте
+      <code>input#name-input</code> (событие input), подставляет его текущее
+      значение в <code>span#name-output</code>. Если инпут пустой, в спане
+      должна отображаться строка <code>'незнакомец'</code>.
+    </div>
+
+    <div class="split-line">
+      <pre>
+          <span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">type</span>="<span class="pl-s">text</span>" <span class="pl-c1">placeholder</span>="<span class="pl-s">Ваше имя?</span>" <span class="pl-c1">id</span>="<span class="pl-s">name-input</span>" /&gt;
+          <span class="pl-kos">&lt;</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>Привет, <span class="pl-kos">&lt;</span><span class="pl-ent">span</span> <span class="pl-c1">id</span>="<span class="pl-s">name-output</span>"<span class="pl-kos">&gt;</span>незнакомец<span class="pl-kos">&lt;/</span><span class="pl-ent">span</span><span class="pl-kos">&gt;</span>!<span class="pl-kos">&lt;/</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>
+        </pre>
+    </div>
+
+    <input type="text" placeholder="Ваше имя?" id="name-input" />
+    <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
+
+    <script src="./js/05-task.js" type="module"></script>
+  </body>
+</html>

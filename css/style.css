@@ -1,0 +1,104 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 50px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+li {
+  list-style: none;
+
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+a {
+  text-decoration: none;
+  color: cadetblue;
+}
+
+.home-page-link {
+  margin-bottom: 30px;
+}
+
+li > h2 {
+  margin-bottom: 20px;
+}
+
+.split-line {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid grey;
+}
+
+/* Task 2 */
+.ingredients {
+  color: tomato;
+}
+
+.description {
+  margin-bottom: 15px;
+}
+
+/* Task 3 */
+.gallery__list {
+  display: flex;
+
+  padding: 0;
+
+  /* outline: 1px solid tomato; */
+}
+
+.gallery__item {
+  width: calc((100% - 3 * 30px) / 3);
+
+  margin: 15px;
+}
+
+.img-item {
+  display: inline-block;
+
+  max-width: 100%;
+
+  object-fit: cover;
+}
+
+/* Task 4 */
+.counter__value {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* Task 6 */
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}

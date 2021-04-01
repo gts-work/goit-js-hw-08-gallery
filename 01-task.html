@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <h3 class="home-page-link"><a href="./index.html">Home</a></h3>
+    <title>Задание 1</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Задание 1</h1>
+    <p>Напиши скрипт, который выполнит следующие операции.</p>
+    <p>
+      Посчитает и выведет в консоль количество категорий в <b>ul#categories</b>,
+      то есть элементов <b>li.item</b>. Получится
+      <b>'В списке 3 категории.'</b>.
+    </p>
+    <p>
+      Для каждого элемента <b>li.item</b> в списке <b>ul#categories</b>, найдет
+      и выведет в консоль текст заголовка элемента (тега h2) и количество
+      элементов в категории (всех вложенных в него элементов li).
+    </p>
+    <div class="split-line">
+      Например для первой категории получится:
+      <ul>
+        <li><b>Категория: Животные</b></li>
+        <li><b>Количество элементов: 4</b></li>
+      </ul>
+    </div>
+
+    <ul id="categories">
+      <li class="item">
+        <h2>Животные</h2>
+
+        <ul>
+          <li>Кот</li>
+          <li>Хомяк</li>
+          <li>Лошадь</li>
+          <li>Попугай</li>
+        </ul>
+      </li>
+      <li class="item">
+        <h2>Продукты</h2>
+
+        <ul>
+          <li>Хлеб</li>
+          <li>Петрушка</li>
+          <li>Творог</li>
+        </ul>
+      </li>
+      <li class="item">
+        <h2>Технологии</h2>
+
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node</li>
+        </ul>
+      </li>
+    </ul>
+
+    <script src="./js/01-task.js" type="module"></script>
+  </body>
+</html>

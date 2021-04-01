@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <h3 class="home-page-link"><a href="./index.html">Home</a></h3>
+    <title>Задание 4</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Задание 4</h1>
+
+    <div class="description">
+      Счетчик состоит из спана и кнопок, которые должны увеличивать и уменьшать
+      значение счетчика на <code>1</code>.
+    </div>
+
+    <div>
+      <ul>
+        <li>
+          Создай переменную <code>counterValue</code> в которой будет хранится
+          текущее значение счетчика.
+        </li>
+        <li>
+          Создай функции <code>increment</code> и <code>decrement</code> для
+          увеличения и уменьшения значения счетчика
+        </li>
+        <li>
+          Добавь слушатели кликов на кнопки, вызовы функций и обновление
+          интерфейса
+        </li>
+      </ul>
+    </div>
+
+    <div class="split-line">
+      <pre>
+          <span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">id</span>="<span class="pl-s">counter</span>"<span class="pl-kos">&gt;</span>
+            <span class="pl-kos">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">type</span>="<span class="pl-s">button</span>" <span class="pl-c1">data-action</span>="<span class="pl-s">decrement</span>"<span class="pl-kos">&gt;</span>-1<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span>
+            <span class="pl-kos">&lt;</span><span class="pl-ent">span</span> <span class="pl-c1">id</span>="<span class="pl-s">value</span>"<span class="pl-kos">&gt;</span>0<span class="pl-kos">&lt;/</span><span class="pl-ent">span</span><span class="pl-kos">&gt;</span>
+            <span class="pl-kos">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">type</span>="<span class="pl-s">button</span>" <span class="pl-c1">data-action</span>="<span class="pl-s">increment</span>"<span class="pl-kos">&gt;</span>+1<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span>
+          <span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>
+        </pre>
+    </div>
+
+    <div id="counter">
+      <button type="button" data-action="decrement">-1</button>
+      <span id="value" class="counter__value">0</span>
+      <button type="button" data-action="increment">+1</button>
+    </div>
+
+    <script src="./js/04-task.js" type="module"></script>
+  </body>
+</html>

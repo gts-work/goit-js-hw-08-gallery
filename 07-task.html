@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <h3 class="home-page-link"><a href="./index.html">Home</a></h3>
+    <title>Задание 7</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Задание 7</h1>
+
+    <div class="description">
+      Напиши скрипт, который реагирует на изменение значения
+      input#font-size-control (событие input) и изменяет инлайн-стиль span#text
+      обновляя свойство font-size. В результате при перетаскивании ползунка
+      будет меняться размер текста.
+    </div>
+
+    <div class="split-line">
+      <pre><span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">id</span>="<span class="pl-s">font-size-control</span>" <span class="pl-c1">type</span>="<span class="pl-s">range</span>" /&gt;
+<span class="pl-kos">&lt;</span><span class="pl-ent">br</span> /&gt;
+<span class="pl-kos">&lt;</span><span class="pl-ent">span</span> <span class="pl-c1">id</span>="<span class="pl-s">text</span>"<span class="pl-kos">&gt;</span>Абракадабра!<span class="pl-kos">&lt;/</span><span class="pl-ent">span</span><span class="pl-kos">&gt;</span></pre>
+    </div>
+
+    <input id="font-size-control" type="range" />
+    <br />
+    <span id="text">Абракадабра!</span>
+
+    <script src="./js/07-task.js" type="module"></script>
+  </body>
+</html>

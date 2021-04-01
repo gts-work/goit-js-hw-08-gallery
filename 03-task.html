@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <h3 class="home-page-link"><a href="./index.html">Home</a></h3>
+    <title>Задание 3</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Задание 3</h1>
+
+    <div class="description">
+      Напиши скрипт для создания галлереи изображений по массиву данных.
+    </div>
+
+    <div>В HTML есть список <code>ul#gallery</code>.</div>
+    <div>
+      <pre><span class="pl-kos">&lt;</span><span class="pl-ent">ul</span> <span class="pl-c1">id</span>="<span class="pl-s">gallery</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">ul</span><span class="pl-kos">&gt;</span></pre>
+    </div>
+
+    <div class="split-line">
+      Используй массив объектов images для создания тегов img вложенных в
+      <code>li</code>. Для создания разметки используй шаблонные строки и
+      <code>insertAdjacentHTML()</code>. Все элементы галереи должны добавляться
+      в DOM за одну операцию вставки. Добавь минимальное оформление галереи
+      флексбоксами или гридами через css-классы.
+    </div>
+
+    <ul id="gallery" class="gallery__list"></ul>
+
+    <script src="./js/03-task.js" type="module"></script>
+  </body>
+</html>

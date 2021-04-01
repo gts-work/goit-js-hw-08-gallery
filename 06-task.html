@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <h3 class="home-page-link"><a href="./index.html">Home</a></h3>
+    <title>Задание 6</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Задание 6</h1>
+
+    <div class="description">
+      Напиши скрипт, который бы при потере фокуса на инпуте, проверял его
+      содержимое на правильное количество символов.
+    </div>
+
+    <div>
+      <pre><span class="pl-kos">&lt;</span><span class="pl-ent">input</span>
+  <span class="pl-c1">type</span>="<span class="pl-s">text</span>"
+  <span class="pl-c1">id</span>="<span class="pl-s">validation-input</span>"
+  <span class="pl-c1">data-length</span>="<span class="pl-s">6</span>"
+  <span class="pl-c1">placeholder</span>="<span class="pl-s">Введи 6 символов</span>"
+/&gt;   
+      </pre>
+    </div>
+
+    <div class="description">
+      Сколько символов должно быть в инпуте, указывается в его атрибуте
+      <code>data-length</code>.
+    </div>
+    <div class="description">
+      Если введено подходящее количество, то border инпута становится зеленым,
+      если неправильное - красным.
+    </div>
+
+    <div class="split-line">
+      Для добавления стилей, используй CSS-классы <code>valid</code> и
+      <code>invalid</code>.
+    </div>
+
+    <input
+      type="text"
+      id="validation-input"
+      data-length="6"
+      placeholder="Введи 6 символов"
+    />
+
+    <script src="./js/06-task.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <h3 class="home-page-link"><a href="./index.html">Home</a></h3>
+    <title>Задание 8</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Задание 8</h1>
+
+    <div class="description">
+      Напиши скрипт создания и очистки коллекции элементов. Пользователь вводит
+      количество элементов в <code>input</code> и нажимает кнопку
+      <code>Создать</code>, после чего рендерится коллекция. При нажатии на
+      кнопку <code>Очистить</code>, коллекция элементов очищается.
+    </div>
+
+    <div class="description">
+      Создай функцию <code>createBoxes(amount)</code>, которая принимает 1
+      параметр <code>amount</code> - число. Функция создает столько
+      <code>div</code>, сколько указано в <code>amount</code> и добавляет их в
+      <code>div#boxes</code>.
+    </div>
+
+    <div class="description">Каждый созданный div:</div>
+
+    <div class="description">
+      <ul>
+        <li>Имеет случайный rgb цвет фона</li>
+        <li>Размеры самого первого div - 30px на 30px</li>
+        <li>
+          Каждый следующий div после первого, должен быть шире и выше
+          предыдущего на 10px
+        </li>
+      </ul>
+    </div>
+
+    <div class="description">
+      Создай функцию <code>destroyBoxes()</code>, которая очищает
+      <code>div#boxes</code>.
+    </div>
+
+    <div class="split-line">
+      <pre><span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">id</span>="<span class="pl-s">controls</span>"<span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">input</span> <span class="pl-c1">type</span>="<span class="pl-s">number</span>" <span class="pl-c1">min</span>="<span class="pl-s">0</span>" <span class="pl-c1">max</span>="<span class="pl-s">100</span>" <span class="pl-c1">step</span>="<span class="pl-s">1</span>" /&gt;
+  <span class="pl-kos">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">type</span>="<span class="pl-s">button</span>" <span class="pl-c1">data-action</span>="<span class="pl-s">render</span>"<span class="pl-kos">&gt;</span>Создать<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span>
+  <span class="pl-kos">&lt;</span><span class="pl-ent">button</span> <span class="pl-c1">type</span>="<span class="pl-s">button</span>" <span class="pl-c1">data-action</span>="<span class="pl-s">destroy</span>"<span class="pl-kos">&gt;</span>Очистить<span class="pl-kos">&lt;/</span><span class="pl-ent">button</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span>
+
+<span class="pl-kos">&lt;</span><span class="pl-ent">div</span> <span class="pl-c1">id</span>="<span class="pl-s">boxes</span>"<span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">div</span><span class="pl-kos">&gt;</span></pre>
+    </div>
+
+    <div id="controls">
+      <input type="number" min="0" max="100" step="1" />
+      <button type="button" data-action="render">Создать</button>
+      <button type="button" data-action="destroy">Очистить</button>
+    </div>
+
+    <div id="boxes"></div>
+
+    <script src="./js/08-task.js" type="module"></script>
+  </body>
+</html>
