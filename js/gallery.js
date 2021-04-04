@@ -73,10 +73,10 @@ function onShowImage(e) {
     return;
   }
 
+  e.preventDefault();
+
   const imageEl = e.target;
-  const parentGalleryLink = imageEl.closest('.gallery__link');
   const imageSrc = imageEl.dataset.source;
-  parentGalleryLink.href = '#';
   galleryLightboxEl.classList.add('is-open');
   lightBoxImageEl.src = imageSrc;
 }
