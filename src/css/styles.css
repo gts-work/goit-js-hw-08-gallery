@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   min-height: 100vh;
@@ -23,6 +23,10 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   background-color: #fff;
   color: #212121;
+}
+
+h1 {
+  text-align: center;
 }
 
 .gallery {
